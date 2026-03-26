@@ -36,7 +36,7 @@ public class DemoTeleOp extends LinearOpMode {
     public void initMotor() {
         testMotor = this.hardwareMap.get(DcMotor.class, "testMotor");
         testMotor.setDirection(DcMotorSimple.Direction.FORWARD);
-        testMotor.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        testMotor.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.FLOAT);
         testMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         testMotor.setPower(0);
     }
